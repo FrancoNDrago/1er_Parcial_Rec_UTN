@@ -70,7 +70,7 @@ def filtrar_por_genero(movies, genero):
     Parametro: Lista de diccionarios con las peliculas y el genero a filtrar.
     Retorna: No retorna nada, guarda el archivo filtrado.
     """
-    peliculas_filtradas = [p for p in movies if p["genero"] == genero]
+    peliculas_filtradas = [peli for peli in movies if peli["genero"] == genero]
     
     nombre_archivo = f"{genero}.csv"
     with open(nombre_archivo, mode="w", encoding="utf-8", newline="") as archivo_csv:
